@@ -1,6 +1,6 @@
 # Slider Plugin
 
-This is a plugin, which help you to create slider in a easy way.
+This is a plugin, which helps you to create slider in a easy way.
 
 ## Code example
 

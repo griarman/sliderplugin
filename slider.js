@@ -83,17 +83,20 @@ $.fn.slider = function (options) {
 
         function changeSlide(current) {
             let activeVideo = sliderElements.find('.activeElement .video');
-            if(activeVideo.length && activeVideo.hasClass('playing')) activeVideo.next().get(0).pause();
+            if(activeVideo.length && activeVideo.hasClass('playing')) {
+                activeVideo.next().get(0).pause();
+                activeVideo.toggleClass('playing')
+            }
             animationStarted = true;
+            let animationInterval = interval / 5 >= 500 ? 500 : interval / 5;
             sliderElements.find('.activeElement').animate({
                 opacity: 0,
-            }, interval / 10, 'linear', function () {
+            }, animationInterval, 'linear', function () {
                 $(this).removeClass('activeElement');
-
                 sliderElements.find('.content').eq(current).animate({
                     opacity: 1,
                     display: 'flex'
-                }, interval / 10, 'linear',function () {
+                }, animationInterval, 'linear',function () {
                     animationStarted = false;
                     changeActive(current);
                 }).addClass('activeElement');

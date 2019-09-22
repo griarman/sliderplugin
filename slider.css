@@ -44,6 +44,8 @@
 }
 .sliderContainer > .leftArrow:hover {
     background: url(./assets/icons/left-arrow.png) rgba(0,0,0,.4) no-repeat center;
+    -webkit-box-shadow: 0 0 5px 1px #000;
+    -moz-box-shadow: 0 0 5px 1px #000;
     box-shadow: 0 0 5px 1px #000;
 }
 .sliderContainer > .rightArrow {
@@ -52,6 +54,8 @@
 }
 .sliderContainer > .rightArrow:hover {
     background: url(./assets/icons/right-arrow.png) rgba(0,0,0,.4) no-repeat center;
+    -webkit-box-shadow: 0 0 5px 1px #000;
+    -moz-box-shadow: 0 0 5px 1px #000;
     box-shadow: 0 0 5px 1px #000;
 }
 .sliderElements > .content > img, .sliderElements > .content > video {
@@ -61,6 +65,11 @@
     width: auto;
     position: relative;
 }
+
+.sliderElements > .content > video {
+    cursor: pointer;
+}
+
 .sliderElements > .content > .video {
     display: none;
     position: absolute;

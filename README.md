@@ -39,6 +39,7 @@ This is a plugin, whitch help you to create slider in a easy way.
 
 ## Installation
 
-At first you should attach files slider.js and slider.css to your project. Then call .slider method on your element which must become slider.
-.slider method should get object with this proporties: slideShow(true / false), interval (ms), animation.
+At first you should attach files slider.js and slider.css to your project. 
+Then call .slider method on your element which must become slider.
+.slider method should get object with this properties: slideShow(true / false), interval (ms), animation.
 Your slider element's children must have these data attributes: data-url(url), data-type(image/video).

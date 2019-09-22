@@ -10,12 +10,20 @@
     <script src="./slider.js"></script>
     <script>
         $(document).ready(function () {
-
+            $('.slider').slider({
+                slideShow: true,
+                interval : 5000,
+                animation: 'slide'
+            });
         })
     </script>
     <link rel="stylesheet" href="./slider.css">
 </head>
 <body>
-
+    <ul class="slider">
+        <li data-url='./assets/images/1.jpg' data-type='image'></li>
+        <li data-url='./assets/videos/video.mp4' data-type='video'></li>
+        <li data-url='./assets/images/2.jpg' data-type='image'></li>
+    </ul>
 </body>
 </html>
